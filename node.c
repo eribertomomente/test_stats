@@ -18,11 +18,11 @@ struct node *append(struct node *newnode, struct node *list) {
 // Ricerca del nodo contenente la stringa <str> in <list>. Restituisce il puntatore al nodo con <str> in caso positivo, null altrimenti
 struct node *find(char *str, struct node *list){
     if (list->data == NULL){
-	return NULL;
+	   return NULL;
     } else if (strncmp(list->data,str, WORDLENGTH)==0){
-	return list;
+	   return list;
     } else {
-	return find(str, list->next);
+	   return find(str, list->next);
    }
 }
 
@@ -31,10 +31,10 @@ struct node *find(char *str, struct node *list){
 struct node *insertNode(char *str, struct node *list){
     struct node *n = find(str, list);
     if (n != NULL){
-	n->freq++;
-	return list;
+	   n->freq++;
+	   return list;
     } else {
-	struct node *newword = create(str);
-	return append(newword, list);
+	   struct node *newword = create(str);
+	   return append(newword, list);
     }
 }
