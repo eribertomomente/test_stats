@@ -1,4 +1,12 @@
-#include "text_stats.h"
+#include "node.h"
+#include "iofunc.h"
+
+/* Funzione di controllo sulle opzioni digitate da riga di comando:
+ *	restituisce '0' se le opzioni sono conformi alle specifiche,
+ *	   	    '1' se non sono stati immesse opzioni
+ *	            '2' altrimenti
+ */
+int testConditions (int, char **);
 
 int main(int argc, char **argv){
 

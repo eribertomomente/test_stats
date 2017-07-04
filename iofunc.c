@@ -1,5 +1,5 @@
-#include "text_stats.h"
-
+#include "iofunc.h"
+#include "node.h"
 /*
  * Prende in input da stdin un numero arbitrario di caratteri, restituisce una lista concatenata con le seguenti caratteristiche:
  * 	- in ogni nodo della lista dev'esserci memorizzata una e una sola stringa e la sua occorrenza nell'input
